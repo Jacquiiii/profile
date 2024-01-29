@@ -1,0 +1,78 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 2;
+  gap: 20px;
+}
+
+.h1 {
+  font-size: 100px;
+  margin-bottom: 15px;
+
+  @media (max-width: 768px) {
+    font-size: 50px;
+  }
+}
+
+.letter {
+  display: inline-block;
+  animation: neon 2.5s ease-in-out;
+}
+
+@keyframes neon {
+  50% {
+    text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 20px #fff,
+      0 0 25px #5fb2a0,
+      0 0 40px #5fb2a0,
+      0 0 50px #5fb2a0,
+      0 0 60px #5fb2a0,
+      0 0 80px #5fb2a0;
+  }
+ 0% {
+    text-shadow:
+      0 0 3px #fff,
+      0 0 8px #fff,
+      0 0 15px #fff,
+      0 0 20px #5fb2a0,
+      0 0 35px #5fb2a0,
+      0 0 45px #5fb2a0,
+      0 0 55px #5fb2a0,
+      0 0 75px #5fb2a0;
+  }
+}
+
+@media screen and (prefers-reduced-motion) { 
+  .h1 {
+    animation: none;
+  }
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.linkedIn {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.linkedIn:hover {
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.5);
+}
+
+.gitHub {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.gitHub:hover {
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.5);
+} 
