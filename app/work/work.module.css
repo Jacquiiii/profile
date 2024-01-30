@@ -1,6 +1,53 @@
 .work {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 100px;
+  width: 100%;
   flex-grow: 2;
+  margin: 50px 0;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+}
+
+@media (max-width: 930px) {
+  .project {
+    flex-direction: column;
+  }
+}
+
+.projectDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.image {
+  width: 600px;
+  height: auto;
+  border-radius: 2px;
+  transition: width 0.5s ease;
+}
+
+.image:hover {
+  width: 650px;
+}
+
+@media (max-width: 768px) {
+  .image {
+    width: 400px;
+  }
+
+  .image:hover {
+    width: 450px;
+  }
 }
