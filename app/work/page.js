@@ -4,7 +4,7 @@ const Work = () => {
   return (
     <div className={styles.work}>
       <div className={styles.project}>
-        <a href="https://admin-dashboard-books.vercel.app/" target="_blank">
+        <a href="https://admin-dashboard-books.vercel.app/" target="_blank" className={styles.link}>
           <img className={styles.image} src="/admin_dashboard.png" />
         </a>
         <div className={styles.projectDetails}>
