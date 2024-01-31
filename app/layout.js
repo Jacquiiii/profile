@@ -1,6 +1,7 @@
 import { Karla } from "next/font/google"
 import "./globals.css"
 import Nav from "./components/Nav/Nav"
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop"
 
 const karla = Karla({ subsets: ["latin"] })
 
@@ -15,6 +16,7 @@ const RootLayout = ({ children }) => {
         <main>
           <Nav />
           {children}
+          <ScrollToTop />
         </main>
       </body>
     </html>
