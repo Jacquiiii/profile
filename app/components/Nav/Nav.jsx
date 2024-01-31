@@ -1,39 +1,15 @@
-'use client'
-
 import Link from "next/link"
 import styles from "./Nav.module.css"
-import { usePathname } from 'next/navigation'
 
 const Nav = () => {
-  const pathname = usePathname()
-
   return (
     <>
-      <div className={styles.links}>
-        <Link 
-          href="/" 
-          className={pathname === "/" ? styles.activeLink : styles.link}
-        >
-          Home
-        </Link>
-        <Link 
-          href="/work" 
-          className={pathname === "/work" ? styles.activeLink : styles.link}
-        >
-          Work
-        </Link>
-        <Link 
-          href="/resume" 
-          className={pathname === "/resume" ? styles.activeLink : styles.link}
-        >
-          Resume
-        </Link>
-        <Link 
-          href="/contact" 
-          className={pathname === "/contact" ? styles.activeLink : styles.link}>
-          Contact
-        </Link>
-      </div>
+      <nav className={styles.links} id="home">
+        <Link href="#home" className={styles.link}>Home</Link>
+        <Link href="#skills" className={styles.link}>Skills</Link>
+        <Link href="#projects" className={styles.link}>Projects</Link>
+        <Link href="#contact" className={styles.link}>Contact</Link>
+      </nav>
       <hr className={styles.hr} />
     </>
   )

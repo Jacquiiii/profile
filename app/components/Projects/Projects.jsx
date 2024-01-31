@@ -1,8 +1,8 @@
-import styles from './work.module.css'
+import styles from './Projects.module.css'
 
-const Work = () => {
+const Projects = () => {
   return (
-    <div className={styles.work}>
+    <section className={styles.projects} id="projects">
       <div className={styles.project}>
         <a href="https://admin-dashboard-books.vercel.app/" target="_blank" className={styles.link}>
           <img className={styles.image} src="/admin_dashboard.png" />
@@ -12,8 +12,8 @@ const Work = () => {
           <span>Add description and highlights</span>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
-export default Work
+export default Projects

@@ -1,4 +1,4 @@
-.work {
+.projects {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,6 +6,7 @@
   width: 100%;
   flex-grow: 2;
   margin: 50px 0;
+  min-height: 100vh;
 }
 
 .project {
@@ -46,12 +47,12 @@
 }
 
 .image {
-  width: 80%;
+  width: 70%;
   height: auto;
   border-radius: 2px;
   transition: width 0.5s ease;
 }
 
 .image:hover {
-  width: calc(80% + 10%);
+  width: calc(70% + 10%);
 }
