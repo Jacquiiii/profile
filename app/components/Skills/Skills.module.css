@@ -1,7 +1,29 @@
 .skills {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
   flex-grow: 2;
+  width: 50%;
   min-height: 100vh;
+
+  @media screen and (max-width: 1024px) {
+    width: 80%;
+  }
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+
+  @media screen and (max-width: 786px) {
+    margin: 20px;
+  }
+}
+
+.image {
+  width: 75px;
+  height: 75px;
 }
