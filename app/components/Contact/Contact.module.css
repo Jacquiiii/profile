@@ -4,9 +4,23 @@
   align-items: center;
   justify-content: center;
   flex-grow: 2;
-  min-height: 100vh;
-  gap: 75px;
   width: 100%;
+  min-height: 100vh;
+  gap: 30px;
+  margin-bottom: 100px;
+
+  @media (max-width: 475px) {
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+}
+
+.hr {
+  width: 90%;
+  height: 1px;
+  background-color: #dfcdc3;
+  border: none;
+  margin-bottom: 30px;
 }
 
 .contactMethods {

@@ -3,10 +3,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
   flex-grow: 2;
-  margin: 50px 0;
+  width: 100%;
   min-height: 100vh;
+  gap: 30px;
+  margin-bottom: 100px;
+
+  @media (max-width: 475px) {
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+}
+
+.hr {
+  width: 90%;
+  height: 1px;
+  background-color: #dfcdc3;
+  border: none;
+  margin-bottom: 30px;
 }
 
 .project {
@@ -50,9 +64,4 @@
   width: 70%;
   height: auto;
   border-radius: 2px;
-  transition: width 0.5s ease;
-}
-
-.image:hover {
-  width: calc(70% + 10%);
 }
