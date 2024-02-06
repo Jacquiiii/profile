@@ -6,7 +6,6 @@
   flex-grow: 2;
   width: 100%;
   min-height: 100vh;
-  gap: 30px;
   margin-bottom: 100px;
 
   @media (max-width: 475px) {
@@ -15,10 +14,21 @@
   }
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+  flex-grow: 1;
+  margin-top: 50px;
+}
+
 .hr {
   width: 90%;
   height: 1px;
-  background-color: #dfcdc3;
+  background-color: #dfcdc32b;
   border: none;
   margin-bottom: 30px;
 }
@@ -28,6 +38,7 @@
   flex-direction: column;
   gap: 50px;
   width: 100%;
+  flex-grow: 3;
 }
 
 .formContainer {

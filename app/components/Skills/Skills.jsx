@@ -18,10 +18,10 @@ const images = {
 const Skills = () => {
   return (
     <section className={styles.skills} id="skills">
-      <div>
+      <div className={styles.header}>
         <h2>Skills</h2>
+        <hr className={styles.hr} />
       </div>
-      <hr className={styles.hr} />
       <div className={styles.images}>
         <div className={styles.imageRow}>
           <img src={images.js} alt="javascript" className={styles.image} />

@@ -4,8 +4,10 @@ import styles from './Contact.module.css'
 const Contact = () => {
   return (
     <section className={styles.contact} id="contact">
-      <h2>Get in touch</h2>
-      <hr className={styles.hr} />
+      <div className={styles.header}>
+        <h2>Get in touch</h2>
+        <hr className={styles.hr} />
+      </div>
       <div className={styles.contactMethods}>
         <div className={styles.formContainer}>
           <form action="/submit" method="post" className={styles.form}>
