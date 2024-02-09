@@ -6,7 +6,6 @@ const Contact = () => {
     <section className={styles.contact} id="contact">
       <div className={styles.header}>
         <h2>Get in touch</h2>
-        <hr className={styles.hr} />
       </div>
       <div className={styles.contactMethods}>
         <div className={styles.formContainer}>

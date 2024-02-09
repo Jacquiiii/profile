@@ -1,60 +1,43 @@
 .skills {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   flex-grow: 2;
-  width: 100%;
+  width: 80%;
   min-height: 100vh;
   margin-bottom: 100px;
-
-  @media (max-width: 475px) {
-    gap: 10px;
-    margin-bottom: 50px;
-  }
 }
 
 .header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  gap: 20px;
-  flex-grow: 1;
-  margin-top: 50px;
+  justify-content: flex-start;
+  width: 20%;
+  font-size: larger;
 }
 
-.hr {
-  width: 90%;
-  height: 1px;
-  background-color: #dfcdc32b;
-  border: none;
-  margin-bottom: 30px;
-}
-
-.images {
+.skillsContainer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin-top: 50px;
-  width: 70%;
-  gap: 75px;
-  flex-grow: 3;
-
-  @media screen and (max-width: 1024px) {
-    width: 80%;
-  }
+  width: 60%;
 }
 
-.imageRow {
+.skillsRow {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.image {
-  width: 50px;
-  height: 50px;
+.skill {
+  border: solid 1px #dfcdc3;
+  border-radius: 3px;
+  background-color: #28344177;
+  padding: 30px 20px;
+  margin: 20px;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.skill:hover {
+  background-color: #283441;
 }

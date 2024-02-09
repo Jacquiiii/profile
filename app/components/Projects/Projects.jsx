@@ -4,10 +4,9 @@ const Projects = () => {
   return (
     <section className={styles.projects} id="projects">
       <div className={styles.header}>
-        <h2>Current Projects</h2>
-        <hr className={styles.hr} />
+        <h2>Projects</h2>
       </div>
-      <div className={styles.projects}>
+      <div className={styles.projectsContainer}>
         <div className={styles.project}>
           <a href="https://admin-dashboard-books.vercel.app/" target="_blank" className={styles.link}>
             <img className={styles.image} src="/admin_dashboard.png" />

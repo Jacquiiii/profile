@@ -1,3 +1,5 @@
+'use client'
+
 import About from "./components/About/About"
 import Contact from "./components/Contact/Contact"
 import Projects from "./components/Projects/Projects"

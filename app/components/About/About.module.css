@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  flex-shrink: 1;
   gap: 20px;
   width: 60%;
 
@@ -24,47 +25,37 @@
 }
 
 .h1 {
-  font-size: 75px;
-  margin-bottom: 15px;
+  width: 7.5em;
+  animation: typing 2s steps(14), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 2.5em;
+}
 
-  @media (max-width: 768px) {
-    font-size: 50px;
-  }
-
-  @media (max-width: 475px) {
-    font-size: 35px;
+@keyframes typing {
+  from {
+    width: 0
   }
 }
 
-.letter {
-  display: inline-block;
-  animation: neon 2.5s ease-in-out;
-}
-
-@keyframes neon {
+@keyframes blink {
   50% {
-    text-shadow:
-      0 0 4px #fff,
-      0 0 11px #fff,
-      0 0 20px #fff,
-      0 0 25px #5fb2a0,
-      0 0 40px #5fb2a0,
-      0 0 50px #5fb2a0,
-      0 0 60px #5fb2a0,
-      0 0 80px #5fb2a0;
-  }
- 0% {
-    text-shadow:
-      0 0 3px #fff,
-      0 0 8px #fff,
-      0 0 15px #fff,
-      0 0 20px #5fb2a0,
-      0 0 35px #5fb2a0,
-      0 0 45px #5fb2a0,
-      0 0 55px #5fb2a0,
-      0 0 75px #5fb2a0;
+    border-color: transparent
   }
 }
+
+/* .letter {
+  display: inline-block;
+  animation: neon 2.5s ease-in-out forwards;
+} */ 
+
+/* @keyframes neon {
+  0%, 100% {
+    color: #fff;
+    text-shadow: 0 0 2px #dfcdc3, 0 0 6px #dfcdc3, 0 0 8px #dfcdc3, 0 0 10px #dfcdc3, 0 0 12px #dfcdc3, 0 0 15px #dfcdc3;
+  }
+} */
 
 @media screen and (prefers-reduced-motion) { 
   .h1 .letter {
