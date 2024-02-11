@@ -13,7 +13,7 @@
   flex-shrink: 1;
   width: 90%;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 0px;
 }
 
 .links {
@@ -51,13 +51,15 @@
 
 .j {
   border: solid 3px #dfcdc3;
-  padding: 5px 15px;
+  padding: 0px 10px 3px 10px;
   margin: 5px;
   font-weight: bold;
+  text-align: center;
+  border-radius: 2px;
 }
 
 .j:hover {
-  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
   text-shadow: none;
   background-color: #283441;
 }

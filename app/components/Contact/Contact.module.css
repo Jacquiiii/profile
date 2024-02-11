@@ -31,6 +31,12 @@
   width: 50%;
 }
 
+@media (max-width: 900px) {
+  .formContainer {
+    width: 80%;
+  }
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -39,6 +45,7 @@
   padding: 25px;
   border-radius: 2px;
   width: 100%;
+  border: 2px solid #dfcdc3;
 }
 
 .input {

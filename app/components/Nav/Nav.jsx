@@ -8,8 +8,8 @@ const Nav = () => {
       <div className={styles.content}>
         <Link href="#about" className={styles.link}><span className={styles.j}>j</span></Link>
         <div className={styles.links}>
+          <Link href="#experience" className={styles.link}>Skills</Link>
           <Link href="#projects" className={styles.link}>Projects</Link>
-          <Link href="#experience" className={styles.link}>Experience</Link>
           <Link href="#contact" className={styles.link}>Contact</Link>
           <ThemeToggle />
         </div>

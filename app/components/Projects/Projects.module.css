@@ -12,30 +12,52 @@
 
 .projectsContainer {
   display: flex;
-  justify-content: space-around;
   gap: 50px;
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  .projectsContainer {
+    flex-direction: column;
+    margin-top: 100px;
+  }
 }
 
 .project {
   display: flex;
+  flex: auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 20px;
   border-radius: 5px;
+  width: 100%;
+  border: 2px solid transparent;
+  padding: 40px 20px;
+  transition: border 0.2s;
+  transition: background-color 0.2s;
+}
+
+.project:hover {
+  background-color: #28344177;
+  border: 2px solid #dfcdc3;
 }
 
 .projectDetails {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .link {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .image {
-  width: 500px;
-  height: 300px;
+  width: 70%;
   border-radius: 5px;
 }

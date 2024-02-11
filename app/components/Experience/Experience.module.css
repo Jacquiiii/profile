@@ -5,29 +5,49 @@
   flex-grow: 2;
   width: 75%;
   min-height: 100vh;
-  margin-bottom: 100px;
 }
 
 .skillsContainer {
   display: flex;
   flex-direction: column;
+  flex: auto;
+  width: 100%;
 }
 
 .skillsRow {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex: auto;
+  width: 100%;
 }
 
 .skill {
   border: solid 1px #dfcdc3;
   border-radius: 3px;
   background-color: #28344177;
-  padding: 30px 20px;
-  margin: 20px;
-  width: 200px;
+  padding: 20px 15px;
+  margin: 15px;
+  width: 25%;
   text-align: center;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .skill {
+    font-size: 14px;
+    padding: 10px;
+    width: 90%;
+  }
+
+  .skillsRow {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .skillsContainer {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .skill:hover {

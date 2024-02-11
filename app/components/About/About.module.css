@@ -45,3 +45,15 @@
     border-right: none;
   }
 }
+
+.resumeButton {
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  color: #dfcdc3;
+}
+
+.resumeButton:hover {
+  border-color: #dfcdc3;
+}
