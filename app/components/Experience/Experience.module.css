@@ -1,10 +1,12 @@
 .experience {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-grow: 2;
   width: 75%;
-  min-height: 100vh;
+  margin-bottom: 200px;
+  background-color: #0d3115;
+  padding: 50px 20px;
 }
 
 .skillsContainer {
@@ -16,14 +18,11 @@
 
 .skillsRow {
   display: flex;
-  justify-content: space-around;
-  flex: auto;
   width: 100%;
 }
 
 .skill {
   border: solid 1px #dfcdc3;
-  border-radius: 3px;
   background-color: #28344177;
   padding: 20px 15px;
   margin: 15px;

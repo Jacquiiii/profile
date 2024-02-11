@@ -1,8 +1,10 @@
+import Header from '../Header/Header'
 import styles from './Experience.module.css'
 
 const Experience = () => {
   return (
     <section className={styles.experience} id="experience">
+      <Header heading="Skills" />
       <div className={styles.skillsContainer}>
         <div className={styles.skillsRow}>
           <div className={styles.skill}>Javascript</div>

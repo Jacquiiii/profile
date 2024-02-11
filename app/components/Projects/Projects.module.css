@@ -1,26 +1,16 @@
 .projects {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
   align-items: center;
   justify-content: center;
-  flex-grow: 2;
-  min-height: 100vh;
-  width: 100%;
-  margin-top: 50px;
+  width: 75%;
+  margin-bottom: 200px;
+  flex-direction: column;
+  background-color: #300d31;
+  padding: 50px 20px;
 }
 
 .projectsContainer {
   display: flex;
-  gap: 50px;
-  width: 80%;
-}
-
-@media (max-width: 768px) {
-  .projectsContainer {
-    flex-direction: column;
-    margin-top: 100px;
-  }
 }
 
 .project {
@@ -30,17 +20,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  border-radius: 5px;
   width: 100%;
-  border: 2px solid transparent;
-  padding: 40px 20px;
-  transition: border 0.2s;
-  transition: background-color 0.2s;
-}
-
-.project:hover {
-  background-color: #28344177;
-  border: 2px solid #dfcdc3;
 }
 
 .projectDetails {
@@ -58,6 +38,6 @@
 }
 
 .image {
-  width: 70%;
-  border-radius: 5px;
+  height: 200px;
+  width: auto;
 }

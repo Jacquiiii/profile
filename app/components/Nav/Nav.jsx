@@ -6,13 +6,14 @@ const Nav = () => {
   return (
     <nav className={styles.nav}>
       <div className={styles.content}>
-        <Link href="#about" className={styles.link}><span className={styles.j}>j</span></Link>
         <div className={styles.links}>
+          <Link href="#about" className={styles.link}>Home</Link>
           <Link href="#experience" className={styles.link}>Skills</Link>
           <Link href="#projects" className={styles.link}>Projects</Link>
+          <Link href="#" className={styles.link}>Resume</Link>
           <Link href="#contact" className={styles.link}>Contact</Link>
-          <ThemeToggle />
         </div>
+        <ThemeToggle />
       </div>
       <hr className={styles.hr} />
     </nav>
