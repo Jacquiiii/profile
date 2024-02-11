@@ -25,12 +25,12 @@
 }
 
 .h1 {
-  width: 7.5em;
+  width: 9em;
   animation: typing 2s steps(14), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid;
-  font-size: 2.5em;
+  font-size: 3em;
+  letter-spacing: 0.25ch;
 }
 
 @keyframes typing {
@@ -39,26 +39,9 @@
   }
 }
 
-@keyframes blink {
-  50% {
-    border-color: transparent
-  }
-}
-
-/* .letter {
-  display: inline-block;
-  animation: neon 2.5s ease-in-out forwards;
-} */ 
-
-/* @keyframes neon {
-  0%, 100% {
-    color: #fff;
-    text-shadow: 0 0 2px #dfcdc3, 0 0 6px #dfcdc3, 0 0 8px #dfcdc3, 0 0 10px #dfcdc3, 0 0 12px #dfcdc3, 0 0 15px #dfcdc3;
-  }
-} */
-
 @media screen and (prefers-reduced-motion) { 
-  .h1 .letter {
+  .h1 {
     animation: none;
+    border-right: none;
   }
 }

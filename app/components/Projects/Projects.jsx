@@ -3,9 +3,6 @@ import styles from './Projects.module.css'
 const Projects = () => {
   return (
     <section className={styles.projects} id="projects">
-      <div className={styles.header}>
-        <h2>Projects</h2>
-      </div>
       <div className={styles.projectsContainer}>
         <div className={styles.project}>
           <a href="https://admin-dashboard-books.vercel.app/" target="_blank" className={styles.link}>

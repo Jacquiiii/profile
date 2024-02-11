@@ -1,11 +1,8 @@
-import styles from './Skills.module.css'
+import styles from './Experience.module.css'
 
-const Skills = () => {
+const Experience = () => {
   return (
-    <section className={styles.skills} id="skills">
-      <div className={styles.header}>
-        <h2>Skills</h2>
-      </div>
+    <section className={styles.experience} id="experience">
       <div className={styles.skillsContainer}>
         <div className={`${styles.skillsRow} ${styles.fallInAnimation}`}>
           <div className={styles.skill}>Javascript</div>
@@ -26,4 +23,4 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export default Experience

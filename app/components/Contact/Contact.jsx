@@ -4,9 +4,6 @@ import styles from './Contact.module.css'
 const Contact = () => {
   return (
     <section className={styles.contact} id="contact">
-      <div className={styles.header}>
-        <h2>Get in touch</h2>
-      </div>
       <div className={styles.contactMethods}>
         <div className={styles.formContainer}>
           <form action="/submit" method="post" className={styles.form}>
@@ -17,6 +14,7 @@ const Contact = () => {
           </form>
         </div>
         <div className={styles.links}>
+          <span>You can also reach me at :</span>
           <Link href="https://www.linkedin.com/in/jacqui-koroll-434445204/" target="_blank">
             <img 
               src="https://cdn-icons-png.flaticon.com/256/174/174857.png" alt="LinkedIn"

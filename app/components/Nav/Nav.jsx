@@ -6,12 +6,11 @@ const Nav = () => {
   return (
     <nav className={styles.nav}>
       <div className={styles.content}>
-        <div className={styles.links} id="home">
-          <Link href="#skills" className={styles.link}>Skills</Link>
+        <Link href="#about" className={styles.link}><span className={styles.j}>j</span></Link>
+        <div className={styles.links}>
           <Link href="#projects" className={styles.link}>Projects</Link>
+          <Link href="#experience" className={styles.link}>Experience</Link>
           <Link href="#contact" className={styles.link}>Contact</Link>
-        </div>
-        <div className={styles.toggle}>
           <ThemeToggle />
         </div>
       </div>
