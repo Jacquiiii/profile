@@ -11,28 +11,30 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-shrink: 1;
   gap: 20px;
   width: 100%;
 }
 
 .h1 {
-  width: 12em;
+  /* width: 8em; */
+  width: 100%;
   animation: typing 2s steps(14), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  font-size: 6em;
-  letter-spacing: 0.25ch;
+  font-size: 5em;
   text-align: center;
+  flex-shrink: 1;
 }
 
 @media (max-width: 768px) {
   .h1 {
-    width: 9em;
+    /* width: 5em; */
+    width: 100%;
     animation: typing 2s steps(13), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
-    font-size: 4em;
+    font-size: 3em;
+    flex-shrink: 1;
   }
 }
 
@@ -47,16 +49,4 @@
     animation: none;
     border-right: none;
   }
-}
-
-.resumeButton {
-  background: none;
-  border: none;
-  border-bottom: 3px solid transparent;
-  cursor: pointer;
-  color: #dfcdc3;
-}
-
-.resumeButton:hover {
-  border-color: #dfcdc3;
 }

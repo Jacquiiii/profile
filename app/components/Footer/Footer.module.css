@@ -10,9 +10,14 @@
 .content {
   display: flex;
   flex-shrink: 1;
-  width: 90%;
+  width: 75%;
   justify-content: space-between;
   padding: 15px 0px;
+
+  @media (max-width: 600px) {
+    align-self: center;
+    width: 90%;
+  }
 }
 
 .links {
@@ -43,10 +48,15 @@
 }
 
 .hr {
-  width: 90%;
+  width: 75%;
   height: 1px;
   background-color: #dfcdc3;
   border: none;
+
+  @media (max-width: 600px) {
+    align-self: center;
+    width: 90%;
+  }
 }
 
 .j {

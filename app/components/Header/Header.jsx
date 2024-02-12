@@ -4,7 +4,6 @@ const Header = ({ heading }) => {
   return (
     <div className={styles.header}>
       <span className={styles.heading}>{heading}</span>
-      <hr className={styles.hr} />
     </div>
   )
 }

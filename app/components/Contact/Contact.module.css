@@ -5,8 +5,12 @@
   justify-content: center;
   width: 75%;
   margin-bottom: 200px;
-  background-color: #301b04;
   padding: 50px 20px;
+
+  @media (max-width: 600px) {
+    align-self: center;
+    width: 90%;
+  }
 }
 
 .form {

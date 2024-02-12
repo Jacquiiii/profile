@@ -5,8 +5,12 @@
   justify-content: center;
   width: 75%;
   margin-bottom: 200px;
-  background-color: #0d3115;
   padding: 50px 20px;
+
+  @media (max-width: 600px) {
+    align-self: center;
+    width: 90%;
+  }
 }
 
 .skillsContainer {
@@ -23,12 +27,12 @@
 
 .skill {
   border: solid 1px #dfcdc3;
-  background-color: #28344177;
   padding: 20px 15px;
   margin: 15px;
   width: 25%;
   text-align: center;
   cursor: pointer;
+  transition: 0.5s background-color;
 }
 
 @media (max-width: 768px) {
@@ -50,5 +54,7 @@
 }
 
 .skill:hover {
-  background-color: #283441;
+  color: #1e2731;
+  background-color: #dfcdc3;
+  font-weight: bold;
 }
